@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>رحلة إلى الفضاء | Rocket 3D</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- مكتبة Three.js لإنشاء المشهد ثلاثي الأبعاد -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <p class="eyebrow">3D SPACE EXPLORATION</p>
+    <h1>رحلة إلى الفضاء</h1>
+    <p class="subtitle">
+      مشروع تفاعلي لصاروخ ثلاثي الأبعاد
+    </p>
+  </header>
+
+  <main>
+
+    <!-- نافذة عرض الصاروخ -->
+    <section class="scene-frame">
+      <div id="scene">
+
+        <!-- أسماء الطالبات داخل المشهد -->
+        <div class="student-names">
+          <span class="team-label">مشاركة الطالبتين</span>
+          <div>شوق الجهني</div>
+          <div>ديم الجهني</div>
+        </div>
+
+        <div class="scene-label">MISSION 001</div>
+
+        <div id="loading">
+          جاري تجهيز الصاروخ...
+        </div>
+
+      </div>
+    </section>
+
+    <!-- أزرار التحكم -->
+    <div class="controls">
+      <button id="launchBtn" type="button">
+        🚀 إطلاق الصاروخ
+      </button>
+
+      <button id="resetBtn" type="button">
+        ↺ إعادة التشغيل
+      </button>
+    </div>
+
+    <p class="hint">
+      اسحبي بالماوس لتدوير المشهد، واستخدمي العجلة للتقريب والإبعاد.
+    </p>
+
+    <p id="status" role="status">
+      الصاروخ جاهز للإطلاق
+    </p>
+
+  </main>
+
+  <footer>
+    SPACE EXPLORATION · 3D PROJECT · 2026
+  </footer>
+
+  <!-- ملف JavaScript المسؤول عن الصاروخ والدخان والحركة -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
+ 
